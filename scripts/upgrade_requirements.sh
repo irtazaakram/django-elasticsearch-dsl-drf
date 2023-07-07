@@ -16,6 +16,15 @@ pip-compile django_3_1_and_elastic_7x.in "$@" --upgrade
 pip-compile django_3_2.in "$@" --upgrade
 pip-compile django_3_2_and_elastic_6x.in "$@" --upgrade
 pip-compile django_3_2_and_elastic_7x.in "$@" --upgrade
+pip-compile django_4_0.in "$@" --upgrade
+pip-compile django_4_0_and_elastic_6x.in "$@" --upgrade
+pip-compile django_4_0_and_elastic_7x.in "$@" --upgrade
+pip-compile django_4_1.in "$@" --upgrade
+pip-compile django_4_1_and_elastic_6x.in "$@" --upgrade
+pip-compile django_4_1_and_elastic_7x.in "$@" --upgrade
+pip-compile django_4_2.in "$@" --upgrade
+pip-compile django_4_2_and_elastic_6x.in "$@" --upgrade
+pip-compile django_4_2_and_elastic_7x.in "$@" --upgrade
 pip-compile docs.in "$@" --upgrade
 pip-compile documentation.in "$@" --upgrade
 pip-compile elastic.in "$@" --upgrade
