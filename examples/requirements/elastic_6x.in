@@ -1,3 +1,0 @@
-elasticsearch==6.8.2
-elasticsearch-dsl==6.4.0
-django-elasticsearch-dsl==6.5.0

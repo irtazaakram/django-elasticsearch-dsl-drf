@@ -17,36 +17,36 @@ From the project root directory.
 
 Install the django requirements
 -------------------------------
-Since project supports Django versions from 1.8 to 2.1, you may install
+Since project supports Django versions from 3.2 to 4.2, you may install
 any version you want.
 
 To install latest LTS version, do:
 
 .. code-block:: sh
 
-    pip install -r examples/requirements/django_1_11.txt
+    pip install -r examples/requirements/django_4_2.txt
 
 Install Elasticsearch requirements
 ----------------------------------
-Since project supports Elasticsearch versions from 2.x to 6.x, you may install
+Since project supports Elasticsearch versions from 7.x to 8.x, you may install
 any version you want.
 
-To install requirements for 6.x, do:
+To install requirements for 8.x, do:
 
 .. code-block:: sh
 
-    pip install -r examples/requirements/elastic_6x.txt
+    pip install -r examples/requirements/elastic_8x.txt
 
 Run Elasticsearch
 -----------------
 It's really easy using Docker.
 
-To run 6.3.2 using Docker, do:
+To run 8.10.2 using Docker, do:
 
 .. code-block:: sh
 
-    docker pull docker.elastic.co/elasticsearch/elasticsearch:6.3.2
-    docker run -p 9200:9200 -e "discovery.type=single-node" -e "xpack.security.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+    docker pull docker.elastic.co/elasticsearch/elasticsearch:8.10.2
+    docker run -p 9200:9200 -e "discovery.type=single-node" -e "xpack.security.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:8.10.2
 
 Build Elasticsearch index
 -------------------------
