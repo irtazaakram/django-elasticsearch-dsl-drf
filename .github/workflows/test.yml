@@ -14,13 +14,13 @@ jobs:
         include:
 
         - python-version: 3.8
-          tox_env: py38-django32-elasticsearch6
+          tox_env: py38-django32-elasticsearch8
           requirements: django_3_2
         - python-version: 3.8
-          tox_env: py38-django41-elasticsearch6
+          tox_env: py38-django41-elasticsearch8
           requirements: django_4_1
         - python-version: 3.8
-          tox_env: py38-django42-elasticsearch6
+          tox_env: py38-django42-elasticsearch8
           requirements: django_4_2
 
         - python-version: 3.8
@@ -34,13 +34,13 @@ jobs:
           requirements: django_4_2
 
         - python-version: 3.9
-          tox_env: py39-django32-elasticsearch6
+          tox_env: py39-django32-elasticsearch8
           requirements: django_3_2
         - python-version: 3.9
-          tox_env: py39-django41-elasticsearch6
+          tox_env: py39-django41-elasticsearch8
           requirements: django_4_1
         - python-version: 3.9
-          tox_env: py39-django42-elasticsearch6
+          tox_env: py39-django42-elasticsearch8
           requirements: django_4_2
 
         - python-version: 3.9
@@ -54,13 +54,13 @@ jobs:
           requirements: django_4_2
 
         - python-version: 3.10
-          tox_env: py310-django32-elasticsearch6
+          tox_env: py310-django32-elasticsearch8
           requirements: django_3_2
         - python-version: 3.10
-          tox_env: py310-django41-elasticsearch6
+          tox_env: py310-django41-elasticsearch8
           requirements: django_4_1
         - python-version: 3.10
-          tox_env: py310-django42-elasticsearch6
+          tox_env: py310-django42-elasticsearch8
           requirements: django_4_2
 
         - python-version: 3.10
@@ -74,10 +74,10 @@ jobs:
           requirements: django_4_2
 
         - python-version: 3.11
-          tox_env: py311-django41-elasticsearch6
+          tox_env: py311-django41-elasticsearch8
           requirements: django_4_1
         - python-version: 3.11
-          tox_env: py311-django42-elasticsearch6
+          tox_env: py311-django42-elasticsearch8
           requirements: django_4_2
 
         - python-version: 3.11
