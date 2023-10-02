@@ -46,8 +46,8 @@ Make sure to read `FAQ <https://github.com/barseghyanartur/django-elasticsearch-
 
 Prerequisites
 =============
-- Django 2.2, 3.1, 3.2, 4.0, 4.1 and 4.2.
-- Python 3.6, 3.7, 3.8 and 3.9.
+- Django 3.2, 4.1 and 4.2.
+- Python 3.8, 3.9, 3.10 and 3.11.
 - Elasticsearch 6.x, 7.x. For older versions use
   ``django-elasticsearch-dsl-drf`` version 0.18.
 

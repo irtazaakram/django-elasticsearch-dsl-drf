@@ -15,6 +15,14 @@ are used for versioning (schema follows below):
   0.3.4 to 0.4).
 - All backwards incompatible changes are mentioned in this document.
 
+unreleased
+----------
+
+- Adds support for Django 4.1 & 4.2
+- Drops support for Django 2.2 & 3.1
+- Adds support for Python 3.10 & 3.11
+- Drops support for Python 3.7
+
 0.22.5
 ------
 2022-07-04

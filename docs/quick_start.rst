@@ -999,7 +999,7 @@ URL patterns
 .. code-block:: python
 
     urlpatterns = [
-        url(r'^', include(router.urls)),
+        re_path(r'^', include(router.urls)),
     ]
 
 Check what you've done so far
