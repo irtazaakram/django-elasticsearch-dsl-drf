@@ -9,8 +9,6 @@ import unittest
 from django.core.management import call_command
 from django.urls import reverse
 
-from elasticsearch.connection.base import Connection
-
 import pytest
 
 from rest_framework import status
@@ -27,17 +25,17 @@ __all__ = (
     'TestQueryFriendlyPagination',
 )
 
-old_log_request_success = Connection.log_request_success
-es_call_count = 0
+# old_log_request_success = Connection.log_request_success
+# es_call_count = 0
 
 
-def patched_log_request_success(self, *args, **kwargs):
-    global es_call_count
-    es_call_count += 1
-    old_log_request_success(self, *args, **kwargs)
+# def patched_log_request_success(self, *args, **kwargs):
+#     global es_call_count
+#     es_call_count += 1
+#     old_log_request_success(self, *args, **kwargs)
 
 
-Connection.log_request_success = patched_log_request_success
+# Connection.log_request_success = patched_log_request_success
 
 
 @pytest.mark.django_db

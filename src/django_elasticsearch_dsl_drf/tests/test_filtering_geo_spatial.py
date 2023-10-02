@@ -9,7 +9,12 @@ import unittest
 from django.core.management import call_command
 from django.urls import reverse
 
-from elasticsearch.connection.base import TransportError
+from .versions import get_elasticsearch_version as es_version
+
+if es_version < 8:
+    from elasticsearch.connection.base import TransportError
+else:
+    from elasticsearch import TransportError
 
 import pytest
 
