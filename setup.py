@@ -2,7 +2,7 @@ import os
 
 from setuptools import find_packages, setup
 
-version = '0.22.5'
+version = '0.23.0'
 
 DOCS_TRANSFORMATIONS = (
     (
@@ -158,7 +158,7 @@ except:
 install_requires = [
     'six>=1.9',
     'django-nine>=0.2',
-    'django-elasticsearch-dsl>=6.4.1',
+    'django-elasticsearch-dsl>=7.4.1',
     'elasticsearch-dsl',
     'elasticsearch',
     'djangorestframework',
@@ -182,10 +182,11 @@ setup(
     description="Integrate Elasticsearch DSL with Django REST framework.",
     long_description=readme,
     classifiers=[
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Environment :: Web Environment",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "License :: OSI Approved :: GNU Lesser General Public License v2 or "
@@ -211,7 +212,7 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages(where='./src'),
     license='GPL-2.0-only OR LGPL-2.1-or-later',
-    python_requires=">=2.7",
+    python_requires=">=3.8",
     install_requires=(install_requires + extras_require),
     tests_require=tests_require,
     include_package_data=True,

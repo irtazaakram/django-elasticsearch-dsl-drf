@@ -12,7 +12,7 @@ class Command(BaseCommand):
 
     help = "Create test books data."
 
-    requires_system_checks = False
+    requires_system_checks = []
 
     def add_arguments(self, parser):
         parser.add_argument('--number',

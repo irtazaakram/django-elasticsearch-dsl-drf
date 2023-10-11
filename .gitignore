@@ -44,3 +44,5 @@ codebin.py
 /examples/simple/settings/local_settings.py
 yarn.lock
 matyan.log*
+
+env/

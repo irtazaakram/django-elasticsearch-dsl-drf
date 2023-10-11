@@ -1,2 +1,2 @@
--r django_2_2.in
+-r django_4_2.in
 -r elastic_7x.in

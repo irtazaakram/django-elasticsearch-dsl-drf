@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-version="6.3.2"
+version="8.10.0"
 port="9200"
 if [[ $1 == "--version" ]]
 then
@@ -8,13 +8,13 @@ then
     shift
     args="$@"
 else
-    version="6.3.2"
+    version="8.10.0"
     args="$@"
 fi
 
 echo "Starting elasticsearch version $version."
 echo "If you wish to start a different version, provide --version {version} argument."
-echo "    Example: --version 6.4.0"
+echo "    Example: --version 8.10.0"
 
 if [[ $args ]]
 then

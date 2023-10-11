@@ -1,4 +1,4 @@
-from django.conf.urls import url, include
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 from .viewsets import (
     AddressDocumentViewSet,
@@ -269,5 +269,5 @@ router.register(
 # **********************************************************
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    path('', include(router.urls)),
 ]
