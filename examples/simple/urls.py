@@ -14,7 +14,7 @@ admin.autodiscover()
 
 urlpatterns = []
 urlpatterns_args = [
-    path('admin/', include(admin.site.urls)),
+    path('admin/', admin.site.urls),
 ]
 
 urlpatterns_args += [
