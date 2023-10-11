@@ -47,7 +47,7 @@ jobs:
         uses: nick-invision/retry@v2
         with:
           command: |
-            TOX_ENV=$(echo "py${{ matrix.python-version }}-django-${{ matrix.django-version }}-es${{ matrix.es-version }}" | tr -d .)
+            TOX_ENV=$(echo "py${{ matrix.python-version }}-django${{ matrix.django-version }}-elasticsearch${{ matrix.es-version }}" | tr -d .)
             tox -e $TOX_ENV -- --color yes
           timeout_minutes: 15
           max_attempts: 3
